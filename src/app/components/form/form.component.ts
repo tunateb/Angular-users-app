@@ -6,14 +6,14 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./form.component.css'],
 })
 export class FormComponent implements OnInit {
-  @Input() form;
+  @Input() user;
   @Output() submit = new EventEmitter();
 
   constructor() {}
 
   ngOnInit(): void {}
 
-  onSubmit() {
-    this.submit.emit();
+  onSubmit(event) {
+    this.submit.emit(event);
   }
 }

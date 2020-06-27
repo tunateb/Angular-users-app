@@ -8,7 +8,9 @@ import { UsersService } from '../../services/users.service';
   styleUrls: ['./user-profile.component.css'],
 })
 export class UserProfileComponent implements OnInit {
-  user;
+  user = {}
+
+  id: number;
 
   constructor(
     private route: ActivatedRoute,
@@ -20,7 +22,9 @@ export class UserProfileComponent implements OnInit {
     this.usersService.getUser(+id).subscribe((user) => (this.user = user));
   }
 
-  submitHandler() {
-    console.log('submitted');
+  submitHandler(userData) {
+    this.user = userData
+    this.id = userData.id
+    this.usersService.updateUser(this.user, this.id)
   }
 }

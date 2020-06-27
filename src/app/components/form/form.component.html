@@ -1,4 +1,4 @@
-<form action="#" (submit)="onSubmit()" class="form">
+<form action="#" (submit)="onSubmit(user)" class="form">
   <div class="input-wrapper">
     <label for="name" class="form-label">
       <p class="mb-0">Name</p>
@@ -6,7 +6,7 @@
         type="text"
         id="name"
         name="name"
-        [(ngModel)]="form.name"
+        [(ngModel)]="user.name"
         class="form-input"
       />
     </label>
@@ -18,7 +18,7 @@
         type="text"
         id="username"
         name="username"
-        [(ngModel)]="form.username"
+        [(ngModel)]="user.username"
         class="form-input"
       />
     </label>
@@ -30,7 +30,7 @@
         type="text"
         id="email"
         name="email"
-        [(ngModel)]="form.email"
+        [(ngModel)]="user.email"
         class="form-input"
       />
     </label>

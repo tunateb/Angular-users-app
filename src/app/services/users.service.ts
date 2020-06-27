@@ -22,4 +22,10 @@ export class UsersService {
       .post(`${this.baseUrl}/users`, user)
       .subscribe((response) => console.log(response));
   }
+
+  updateUser(user: object, id:number) {
+    this.http
+      .put(`${this.baseUrl}/users/${id}`, user)
+      .subscribe((response) => console.log(response));
+  }
 }

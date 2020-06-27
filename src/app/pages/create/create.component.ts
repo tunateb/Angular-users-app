@@ -7,7 +7,7 @@ import { UsersService } from '../../services/users.service';
   styleUrls: ['./create.component.css'],
 })
 export class CreateComponent implements OnInit {
-  form = {
+  user = {
     name: '',
     username: '',
     email: '',
@@ -18,6 +18,6 @@ export class CreateComponent implements OnInit {
   ngOnInit(): void { }
   
   submit() {
-    this.usersService.createUser(this.form);
+    this.usersService.createUser(this.user);
   }
 }
