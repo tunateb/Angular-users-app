@@ -1,0 +1,27 @@
+.card {
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.details-btn {
+  border: none;
+  cursor: pointer;
+  background-color: #ff2a70;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 4px;
+  padding: 5px 16px;
+  transition: 200ms ease-in-out;
+}
+
+.details-btn:hover {
+  background-color: #bb1f53;
+}
