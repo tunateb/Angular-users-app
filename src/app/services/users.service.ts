@@ -12,4 +12,14 @@ export class UsersService {
   getUsers() {
     return this.http.get(`${this.baseUrl}/users`);
   }
+
+  getUser(id: number) {
+    return this.http.get(`${this.baseUrl}/users/${id}`);
+  }
+
+  createUser(user: object) {
+    this.http
+      .post(`${this.baseUrl}/users`, user)
+      .subscribe((response) => console.log(response));
+  }
 }

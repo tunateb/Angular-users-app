@@ -1,0 +1,41 @@
+<form action="#" (submit)="onSubmit()" class="form">
+  <div class="input-wrapper">
+    <label for="name" class="form-label">
+      <p class="mb-0">Name</p>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        [(ngModel)]="form.name"
+        class="form-input"
+      />
+    </label>
+  </div>
+  <div class="input-wrapper">
+    <label for="username" class="form-label">
+      <p class="mb-0">Username</p>
+      <input
+        type="text"
+        id="username"
+        name="username"
+        [(ngModel)]="form.username"
+        class="form-input"
+      />
+    </label>
+  </div>
+  <div class="input-wrapper">
+    <label for="email" class="form-label">
+      <p class="mb-0">Email</p>
+      <input
+        type="text"
+        id="email"
+        name="email"
+        [(ngModel)]="form.email"
+        class="form-input"
+      />
+    </label>
+  </div>
+  <div class="submit-btn-wrapper">
+    <button type="submit" class="submit-btn mt-3">Submit</button>
+  </div>
+</form>

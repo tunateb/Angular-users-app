@@ -1,0 +1,32 @@
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form-label {
+  font-size: 14px;
+}
+
+.form-input {
+  width: 200px;
+  padding: 3px;
+}
+
+.submit-btn {
+  border: none;
+  cursor: pointer;
+  background-color: #ff2a70;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 4px;
+  padding: 5px 20px;
+  transition: 200ms ease-in-out;
+  width: 100%;
+}
+
+.submit-btn:hover {
+  background-color: #bb1f53;
+}

@@ -10,6 +10,8 @@ import { HomepageComponent } from './pages/homepage/homepage.component';
 import { UsersComponent } from './pages/users/users.component';
 import { UserProfileComponent } from './pages/user-profile/user-profile.component';
 import { ProfileCardComponent } from './components/profile-card/profile-card.component';
+import { CreateComponent } from './pages/create/create.component';
+import { FormComponent } from './components/form/form.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,8 @@ import { ProfileCardComponent } from './components/profile-card/profile-card.com
     UsersComponent,
     UserProfileComponent,
     ProfileCardComponent,
+    CreateComponent,
+    FormComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],

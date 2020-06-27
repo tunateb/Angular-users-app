@@ -1,18 +1,20 @@
 <div class="card">
+  <div>
+    <img
+      [src]="'https://unsplash.it/200/20' + user.id"
+      alt="user avatar"
+      class="avatar"
+    />
+  </div>
+  <div class="text-center m-auto">
+    <h5>{{ user.name }}</h5>
+    <h6>{{ user.username }}</h6>
+    <a>{{ user.email }}</a>
+
     <div>
-      <img
-        [src]="'https://unsplash.it/200/20' + user.id"
-        alt="user avatar"
-        class="avatar"
-      />
-    </div>
-    <div class="text-center m-auto">
-      <h5>{{ user.name }}</h5>
-      <a>{{ user.email }}</a>
-      <div>
-        <button class="details-btn mt-4" (click)="goToProfile(user.id)">
-          Profile Details
-        </button>
-      </div>
+      <button class="details-btn mt-4" (click)="goToProfile(user.id)">
+        Edit Details
+      </button>
     </div>
   </div>
+</div>
