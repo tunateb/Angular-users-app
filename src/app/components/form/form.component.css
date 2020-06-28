@@ -1,9 +1,9 @@
-
 .form {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
+  min-height: 300px;
 }
 
 .form-label {
@@ -11,7 +11,7 @@
 }
 
 .form-input {
-  width: 200px;
+  width: 300px;
   padding: 3px;
 }
 
@@ -23,8 +23,9 @@
   font-size: 14px;
   border-radius: 4px;
   padding: 5px 20px;
+  width: 80%;
   transition: 200ms ease-in-out;
-  width: 100%;
+
 }
 
 .submit-btn:hover {
